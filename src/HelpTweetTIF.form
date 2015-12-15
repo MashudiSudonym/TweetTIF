@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Help TweetTIF"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-54,0,0,2,-119"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="615" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="404" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="text" type="java.lang.String" value="Frequently Asked Questions (FAQ) TweetTIF&#xa;&#xa;1. A : Cara login menggunakan Akun twitter pribadi ?&#xa;   Q : Klik tombol Get Token, namun pastikan terlebih dahulu pada folder tempat Anda menyimpan file tweettif.jar tidak ada file dengan nama twitter4j.properties&#xa;&#xa;2. A : Saya sudah pernah login dan berhasil, namun saya ingin login lagi dengan akun saya yang lain ?&#xa;    Q : Hapus file twitter4j.properties pada folder tempat Anda menyimpan file tweettif.jar, selanjutnya lakukan login/get token seperti yang pernah dilakukan sebelumnya.&#xa;&#xa;3. A : Saya sudah mendapat pesan bahwa saya sudah berhasil akses token, namun kenapa pada menu timeline tetap tidak bisa menampilkan timeline, update status, menampilkan status, dan pencarian ?&#xa;    Q : Pastikan setelah mendapat pesan berhasil mendapatkan token, Anda merestart aplikasi TweetTIF, dengan cara keluar dari aplikasi dan buka kembali aplikasi TweetTIF, dan pastikan Anda tidak menghapus file twitter4j.properties yang ada di folder tempat Anda menyimpan file tweetif.jar.&#xa;&#xa;4. A : Apakah saya boleh menghapus folder lib dalam paket TweetTIF ?&#xa;    Q : Tidak, kami tidak menyarankan untuk menghapus folder tersebut, karena folder tersebut berisi library yang menghubungkan aplikasi ini dengan twitter.&#xa;&#xa;Pertanyaan lain, dapat disampaikan melalui email ke : muhamadmashudiardiwinata[at]gmail.com"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
