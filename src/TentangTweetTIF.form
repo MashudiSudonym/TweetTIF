@@ -54,7 +54,7 @@
         <Component class="javax.swing.JTextPane" name="jTextPane1">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
-            <Property name="text" type="java.lang.String" value="TweetTIF&#xa;&#xa;Dibuat untuk Tugas Ujian Akhir Semester Mata Kuliah Pemrograman Lanjut Teknik Informatika UNISNU Jepara kelas DB, dengan susunan kelompok :&#xa;&#xa;1. Muhamad Mashudi Ardi Winata (14124000229) - Desain, Programmer&#xa;2. Ika Ariyani (141240000245) - Dokumentasi&#xa;3. Faidl Fahruddin Nawa (141240000273) - Riset, Prorammer"/>
+            <Property name="text" type="java.lang.String" value="TweetTIF&#xa;&#xa;Dibuat untuk Tugas Ujian Akhir Semester Mata Kuliah Pemrograman Lanjut Teknik Informatika UNISNU Jepara kelas DB, dengan susunan kelompok :&#xa;&#xa;1. Muhamad Mashudi Ardi Winata (14124000229) - Desain, Programmer&#xa;2. Ika Ariyani (141240000245) - Dokumentasi&#xa;3. Faidl Fahruddin Nawa (141240000273) - Riset, Programmer"/>
           </Properties>
         </Component>
       </SubComponents>

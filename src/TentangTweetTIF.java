@@ -39,7 +39,7 @@ public class TentangTweetTIF extends javax.swing.JDialog {
         setTitle("Tentang TweetTIF");
 
         jTextPane1.setEditable(false);
-        jTextPane1.setText("TweetTIF\n\nDibuat untuk Tugas Ujian Akhir Semester Mata Kuliah Pemrograman Lanjut Teknik Informatika UNISNU Jepara kelas DB, dengan susunan kelompok :\n\n1. Muhamad Mashudi Ardi Winata (14124000229) - Desain, Programmer\n2. Ika Ariyani (141240000245) - Dokumentasi\n3. Faidl Fahruddin Nawa (141240000273) - Riset, Prorammer");
+        jTextPane1.setText("TweetTIF\n\nDibuat untuk Tugas Ujian Akhir Semester Mata Kuliah Pemrograman Lanjut Teknik Informatika UNISNU Jepara kelas DB, dengan susunan kelompok :\n\n1. Muhamad Mashudi Ardi Winata (14124000229) - Desain, Programmer\n2. Ika Ariyani (141240000245) - Dokumentasi\n3. Faidl Fahruddin Nawa (141240000273) - Riset, Programmer");
         jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
