@@ -236,15 +236,17 @@ public class TimeLine extends javax.swing.JFrame {
             List<Status> statuses = null;
             try {
             statuses = twitter.getHomeTimeline();
-            } catch (TwitterException ex) {
-            Logger.getLogger(TimeLine.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            
             
             statuses.stream().forEach((status) -> {
             txtTimeline.append(status.getUser().getName() + " : " +
             status.getText() + " - " + status.getCreatedAt() + " \n Via : " + 
                     status.getSource() + "\n\n");
             });
+            } catch (TwitterException ex) {
+                Logger.getLogger(TimeLine.class.getName()).log(Level.SEVERE, null, ex);
+                JOptionPane.showMessageDialog(rootPane, "Failed to Show Status!" + ex.getMessage());
+            }
     }//GEN-LAST:event_btTimelineActionPerformed
 
     private void btReloadTwitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btReloadTwitActionPerformed

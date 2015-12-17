@@ -1,6 +1,7 @@
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import twitter4j.Query;
 import twitter4j.QueryResult;
 import twitter4j.Twitter;
@@ -99,15 +100,17 @@ public class Pencarian extends javax.swing.JDialog {
         
         try {
             result = twitter.search(query);
-        } catch (TwitterException ex) {
-            Logger.getLogger(Pencarian.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        
         
         result.getTweets().stream().forEach((status) -> {
             txtSearchTimeline.append("@" + status.getUser().getScreenName()
                     + ":" + status.getText() + " - " + status.getCreatedAt() 
                     + " \n Via : " + status.getSource() + "\n\n");
         });
+        } catch (TwitterException ex) {
+            Logger.getLogger(Pencarian.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(rootPane, "Failed !! " + ex.getMessage());
+        }
     }//GEN-LAST:event_btSearchActionPerformed
 
     /**
