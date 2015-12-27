@@ -32,8 +32,12 @@ public class TimeLine extends javax.swing.JFrame {
     
     public TimeLine() throws TwitterException {
         initComponents();
+        
         // Image Icon
         setIconImage(new ImageIcon(getClass().getResource("/app.png")).getImage());
+        
+        // maximize window
+        this.setExtendedState(TimeLine.MAXIMIZED_BOTH);
     }
 
     /**
@@ -55,7 +59,6 @@ public class TimeLine extends javax.swing.JFrame {
         txtStatus = new javax.swing.JTextArea();
         btReloadTwit = new javax.swing.JButton();
         btSearch = new javax.swing.JButton();
-        btGetToken = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -114,13 +117,6 @@ public class TimeLine extends javax.swing.JFrame {
             }
         });
 
-        btGetToken.setText("Get Token");
-        btGetToken.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btGetTokenActionPerformed(evt);
-            }
-        });
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -136,16 +132,14 @@ public class TimeLine extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(297, 297, 297)
-                .addComponent(btTentang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btTentang, javax.swing.GroupLayout.DEFAULT_SIZE, 587, Short.MAX_VALUE)
                 .addGap(259, 259, 259))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btGetToken)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane3)
@@ -169,7 +163,6 @@ public class TimeLine extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btGetToken)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -181,7 +174,7 @@ public class TimeLine extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(btTentang)
                 .addGap(17, 17, 17))
@@ -282,12 +275,6 @@ public class TimeLine extends javax.swing.JFrame {
         new Pencarian(this, rootPaneCheckingEnabled).setVisible(true);
     }//GEN-LAST:event_btSearchActionPerformed
 
-    private void btGetTokenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGetTokenActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        new gettoken().setVisible(true);
-    }//GEN-LAST:event_btGetTokenActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -332,7 +319,6 @@ public class TimeLine extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btGetToken;
     private javax.swing.JButton btReloadTwit;
     private javax.swing.JButton btSearch;
     private javax.swing.JButton btTentang;
